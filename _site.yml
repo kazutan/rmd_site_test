@@ -2,8 +2,16 @@ name: "my-website"
 navbar:
   title: "My Website"
   left:
-    - text: "Home"
+    - text: "トップだよ"
       href: index.html
-    - text: "About"
+    - text: "アバウトだよ"
       href: about.html
+    - text: "さらにメニュー"
+      icon: fa-gear
+      menu:
+        - text: "Rmdでサイト作り"
+        - text: "その1"
+          href: http://rmarkdown.rstudio.com/rmarkdown_websites.html
+        - text: "その2"
+          href: http://rmarkdown.rstudio.com/rmarkdown_site_generators.html
 output_dir: "."

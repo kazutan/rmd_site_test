@@ -1,5 +1,8 @@
 ---
 title: "About This Website"
+output:
+  html_document:
+    theme: "cosmo"
 ---
 
 ```{r setup, include=FALSE}

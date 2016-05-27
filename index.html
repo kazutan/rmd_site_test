@@ -11,7 +11,7 @@
 
 
 
-<title>My Website</title>
+<title>R MarkdownでWebサイト作成</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,6 +62,9 @@ h5 {
 }
 h6 {
   font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
 }
 </style>
 
@@ -148,7 +151,7 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -210,30 +213,21 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">My Website</h1>
+<h1 class="title toc-ignore">R MarkdownでWebサイト作成</h1>
 
 </div>
 
 
-<p>やっはろー</p>
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<div class="section level2">
+<h2>概要</h2>
+<p><code>rmarkdown::render_site</code>関数を使うことでR Markdownをまとめてrenderすることができます。この資料では、Webサイト作成の基本をご紹介します。</p>
+<p>この機能は(2016/04/19執筆時)<strong>rmarkdown</strong>パッケージの開発バージョンでのみ可能です:</p>
+<pre class="r"><code>devtools::install_github(&quot;rstudio/rmarkdown&quot;)</code></pre>
+<p>統合開発環境のRStudioもR MarkdownによるWebサイト開発に統合的なサポートをしてくれます。またこれらの機能は(2016/04/19執筆時)<strong>Preview版のRStudio</strong>で提供されています。</p>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="index_files/figure-html/pressure-1.png" alt="" /><!-- --></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div class="section level2">
+<h2>簡単な例</h2>
+<p>以降そのうちまとめていきます</p>
 </div>
 
 

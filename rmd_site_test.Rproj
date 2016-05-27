@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: ~/Dropbox/for_R/rmd_site_test
+WebsitePath: /vagrant_data/rmd_site_test
